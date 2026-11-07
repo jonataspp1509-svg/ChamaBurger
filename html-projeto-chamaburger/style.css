@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --fonte-base: "Inter", sans-serif;
+    --fonte-titulo: "Anton", sans-serif;
+    --color-primary: #E63946;
+    --color-primary-dark: #C1272D;
+    --color-accent: #F4A300;
+    --color-dark: #201A17;
+    --color-light: #FFF7ED;
+    --color-gray: #6B7280;
+    --radius: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-base);
+    color: var(--color-dark);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.botao {
+    display: inline-block;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 999px;
+    font-family: var(--fonte-base);
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.botao:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+}
+
+.botao-nav {
+    background: var(--color-primary);
+    color: var(--color-light);
+    padding: 10px 22px;
+}
+
+.cabecalho-site {
+    background: var(--color-dark);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.barra-navegacao {
+    color: var(--color-light);
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 24px;
+}
+
+.logo {
+    font-family: var(--fonte-titulo);
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.menu-links {
+    display: flex;
+    gap: 32px;
+}
+
+.menu-links a {
+    color: #E8D9CD;
+    font-weight: 500;
+}
+
+.menu-links a:hover {
+    color: var(--color-light);
+}
+
+.botao-primario {
+    background: var(--color-accent);
+    color: var(--color-dark);
+}
+
+.destaque {
+    background: linear-gradient(135deg, var(--color-dark), #3A241A);
+    width: 100%;
+    padding: 80px 24px;
+}
+
+.destaque-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    color: var(--color-light);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.destaque-texto {
+    flex-grow: 1;
+    flex-basis: 400px;
+}
+
+.destaque h1 {
+    font-size: 3rem;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    color: var(--color-accent);
+}
+
+.destaque p {
+    font-size: 1.15rem;
+    color: #E8D9CD;
+    max-width: 480px;
+    margin-bottom: 32px;
+}
